@@ -1,20 +1,110 @@
 <!DOCTYPE html>
-<html>
 
 <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pig-dice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pig-dice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+  <div class="jumbotron">
+    <div class="container-fluids">
+      <div class="diceRules">
+        <h1>Dice Game </h1>
+        <ol>
+          <li>Each player has a chance to play 6 consecutive times at a time</li>
+          <li>If a player roles the dice to 1, their score is reset to zero and their opponent has an opportunity to
+            play</li>
+          <li>A player is allowed to Hold. Their current score is reset to their Total Score</li>
+          <li>The first player to score 100 points wins!!!!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="well well-lg">
+    <div class="playerInput">
+      <div class="row">
+        <form id="players">
+          <div class="col-md-6">
+            <div class="form-group">
+              <h2>PLAYER 1</h2>
+            </div>
+            <div class="form-group">
+              <label for="player1-userName">Username:</label>
+              <input type="text" id="player1-userName" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <h2>PLAYER 2</h2>
+            </div>
+            <div class="form-group">
+              <label for="player2-userName">Username:</label>
+              <input type="text" id="player2-userName" class="form-control">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-danger">Let's Play</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="well">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="showPlayer1">
+          <h3>Player 1: <span class="player1Name"></span> </h3>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="showPlayer2">
+          <h3>Player 2: <span class="player2Name"></span></h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="player1Score">
+          <form>
+            <div class="form-group">
+              <span class="btn btn-danger" id="player1Roll">ROLL</span>
+              <span class="btn btn-primary" id="player1Hold">HOLD</span>
+            </div>
+          </form>
+          <div class="showPlayer1Scores">
+            <h3>Dice Scores: <span class="Player1-diceScores"></span></h3>
+            <h3>Total Score: <span class="Player1-totalScores"></span></h3>
+            <h3>Overall Score: <span class="Player1-overallScores"></span></h3>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="player2Score">
+          <form>
+            <div class="form-group">
+              <span class="btn btn-danger" id="player2Roll">ROLL</span>
+              <span class="btn btn-primary" id="player2Hold">HOLD</span>
+            </div>
+          </form>
+          <div class="showPlayer2Scores">
+            <h3>Dice Scores: <span class="Player2-diceScores"></span></h3>
+            <h3>Total Score: <span class="Player2-totalScores"></span></h3>
+            <h3>Overall Score: <span class="Player2-overallScores"></span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
 
 </html>
