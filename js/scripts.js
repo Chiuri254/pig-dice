@@ -13,7 +13,7 @@ function resetFields() {
 }
 Players.prototype.roll = function () {
   var diceRoll = Math.floor((Math.random() * 6) + 1); // random  returns decimal value ands it *
-  //removes decimal and rounds it off with +1
+  // floor removes decimal and rounds it off with +1
   if (diceRoll === 1) {
     this.totalScores = 0;
     alert(" Your turn is over! you got one ")
