@@ -9,6 +9,7 @@ Joseph Chiuri
 A web application that simulates the Dice Game. The application allows users to play and roll the dice interchangeably
 
 ## Project set-up instructions
+
 ```python
 To start using this project use the following commands:
 git clone ( https://github.com/Chiuri254/pig-dice.git)
@@ -21,10 +22,11 @@ atom . (This is if atom is your preferred text editor)
 
 ```python
 Input user details
-Players to roll the dice and display score 
+Players to roll the dice and display score
 Application allows user to keep ,roll dice and hold dice
 Displays the winner of that particular game
 ```
+
 ## Bugs
 
 There are currently no bugs in this program.
@@ -37,7 +39,7 @@ There are currently no bugs in this program.
 
 ## Link to Project
 
-Here is a link to my project (https://chiuri254.github.io/pig-dice/  )
+Here is a link to my project (https://chiuri254.github.io/pig-dice/ )
 
 ## License
 
