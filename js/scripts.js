@@ -23,16 +23,17 @@ Players.prototype.roll = function () {
   return diceRoll;
   //console.log(randomNumber);
 };
-
+// prototype method that returns hold and calls upon players
 Players.prototype.hold = function () {
   this.overallScores += this.totalScores;
   this.totalScores = 0;
   return this.overallScores;
 
 };
+// inline style via element.style on the body and logging to console
 document.body.style.backgroundColor = 'lightblue';
 console.log(document.body.style.backgroundColor);
-// "lightblue"
+
 
 //user interface
 
