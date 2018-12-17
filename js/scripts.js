@@ -46,6 +46,7 @@ $(document).ready(function () {
     var gamer2 = new Players(player2);
     $(".player1Name").text(gamer1.username);
     $(".player2Name").text(gamer2.username);
+    // gets players names
 
     $("#player1Roll").click(function (event) {
       event.preventDefault();
