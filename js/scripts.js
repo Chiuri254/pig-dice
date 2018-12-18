@@ -1,5 +1,5 @@
 // Business Logic
-// create player constructor
+// create player constructor-called to create object instance
 function Players(username, diceScores, totalScores, overallScores) {
   this.username = username;
   this.diceScores = 0;
